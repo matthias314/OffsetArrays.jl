@@ -185,7 +185,7 @@ julia> axes(zo, 1)
 OffsetArrays.IdOffsetRange(values=1:4, indices=2:5)
 
 julia> Array(zo)
-ERROR: BoundsError: attempt to access 4-element UnitRange{Int64} at index [5]
+ERROR: DimensionMismatch: axes must agree, got (Base.OneTo(4),) and (OffsetArrays.IdOffsetRange(values=1:4, indices=2:5),)
 [...]
 ```
 

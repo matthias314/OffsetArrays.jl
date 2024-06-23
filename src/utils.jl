@@ -57,10 +57,10 @@ julia> inds = NTupleOfUnitRanges((3:5, 2:4));
 
 julia> oa = OffsetArray(a, inds);
 
-julia> axes(oa, 1) == 3:5
+julia> axes(oa, 1) == Base.IdentityUnitRange(3:5)
 true
 
-julia> axes(oa, 2) == 2:4
+julia> axes(oa, 2) == Base.IdentityUnitRange(2:4)
 true
 ```
 """
